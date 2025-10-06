@@ -1,0 +1,13 @@
+#floorsqt
+def floorsqt(n):
+    low=1
+    high=n
+    while(low<=high):
+        mid=(low+high)//2
+        if(mid*mid>n):
+            high=mid-1
+        else:
+            low=mid+1
+    return high
+n=int(input())
+print(floorsqt(n))
